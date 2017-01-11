@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html>
+       <head>
+                <!-- Css files-->
+                <link rel="stylesheet" href="css/bootstrap.css"/>
+                <link rel="stylesheet" href="css/bootstrap.min.css"/>
+                <link rel="stylesheet" href="css/main.css"/>
+                <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bungee+Shade|Gloria+Hallelujah|Lemonada|Merriweather|Orbitron|Oswald|Pacifico|Play|Shadows+Into+Light|VT323" rel="stylesheet">
+
+       </head>
+       <body ng-app="myApp" ng-controller="PageController">   
+         <div class="center-box">   
+           <div class="row">
+               <!--List of fonts-->
+               <div class="col-md">
+                    <div class="btn-group dropup">
+                      <button type="button" class="btn btn-default">Fonts</button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="caret"></span>
+                       <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li ng-click="changeFontStyle('Bungee Shade',cursive)"><a style="font-family:'Bungee Shade',cursive">Bungee Shade</a></li>
+                          <li ng-click="changeFontStyle('Oswald', sans-serif)"><a style="font-family:'Oswald', sans-serif">Oswald</a></li>
+                          <li ng-click="changeFontStyle('Merriweather', serif)"><a style="font-family:'Merriweather', serif">Merriweather</a></li>
+                          <li ng-click="changeFontStyle('Lemonada', cursive)"><a style="font-family:'Lemonada', cursive">Lemonada</a></li>
+                          <li ng-click="changeFontStyle('Pacifico', cursive)"><a style="font-family:'Pacifico', cursive">Pacifico</a></li>
+                          <li ng-click="changeFontStyle('VT323', monospace)"><a style="font-family:'VT323', monospace">VT323</a></li>
+                          <li ng-click="changeFontStyle('Gloria Hallelujah', cursive)"><a style="font-family:'Gloria Hallelujah', cursive">Gloria Hallelujah</a></li>
+                          <li ng-click="changeFontStyle('Amatic SC', cursive)"><a style="font-family:'Amatic SC', cursive">Amatic SC</a></li>
+                          <li ng-click="changeFontStyle('Shadows Into Light', cursive)"><a style="font-family:'Shadows Into Light', cursive">Shadows Into Light</a></li>
+                          <li ng-click="changeFontStyle('Play', sans-serif)"><a style="font-family:'Play', sans-serif">Play</a></li>
+                      </ul>
+                  </div>
+                   <!--DEMO-->
+                    <div class="jumbotron" style="height:200px;padding-left:290px">
+                      <h1 style="font-family:{{fontStyle}}">Hello, world!</h1>
+                    </div>
+               </div>
+             </div> 
+           </div> 
+           <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+           <script src="js/angular.min.js" type="text/javascript"></script>
+           <script src="js/bootstrap.min.js" type="text/javascript"></script>
+           <script src="js/maincontroller.js" type="text/javascript"></script>
+       </body>
+    </html>
